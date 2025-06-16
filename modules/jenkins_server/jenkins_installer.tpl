@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt update
-yes | sudo apt install fontconfig openjdk-21-jre
+yes | sudo apt install fontconfig openjdk-21-jre unzip
+
+
 echo "Waiting for 30 seconds before installing the jenkins package..."
 sleep 30
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
