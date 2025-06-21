@@ -383,8 +383,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ![alt text](/images/jenkins_init_3.png)
 
 Install the following plugins manually via Manage Jenkins > Plugin Manager > Available.
-AWS CloudFormation
-AWS Credentials
+- AWS CloudFormation
+- AWS Credentials
 
 ![alt text](/images/jenkins_init_4.png)
 
