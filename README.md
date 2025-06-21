@@ -4,6 +4,7 @@ Here we will walk through the process of provisioning a Jenkins server on an Ama
 
 ### Architecture Overview
 Here is the architecture we will be dealing with. The purpose of this is only to have a jenkins server running, the architecture may not be ideal.
+
 ![alt text](/images/architecture.png)
 
 ### Step 1: Create Networking Components
