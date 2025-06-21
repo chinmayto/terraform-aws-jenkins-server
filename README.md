@@ -3,7 +3,7 @@
 Here we will walk through the process of provisioning a Jenkins server on an Amazon EC2 instance within a public subnet. This setup lays the foundation for building robust CI/CD pipelines on AWS. We will use Terraform to automate infrastructure provisioning and install Jenkins for orchestration.
 
 ### Architecture Overview
-
+Here is the architecture we will be dealing with. The purpose of this is only to have a jenkins server running, the architecture may not be ideal.
 ![alt text](/images/architecture.png)
 
 ### Step 1: Create Networking Components
@@ -247,7 +247,7 @@ resource "aws_route53_record" "route53_A_record" {
 
 ### Step 2: Launch EC2 Instance and Install Jenkins
 
-Here we will create an EC2 instance in public subnet. The purpose of this is only to have a jenkins server running, the architecture may not be ideal.
+Here we will create an EC2 instance in public subnet.
 
 ```terraform
 ################################################################################
