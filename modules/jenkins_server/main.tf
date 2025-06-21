@@ -1,7 +1,7 @@
 ################################################################################
-# Get latest Amazon Linux 2023 AMI
+# Get latest Ubuntu AMI
 ################################################################################
-data "aws_ami" "ubuntu24" {
+data "aws_ami" "ubuntu22" {
   most_recent = true
   owners      = ["099720109477"]
 
@@ -71,7 +71,7 @@ resource "aws_security_group" "ec2_jenkins_port_8080" {
 # Create the Linux EC2 Web server
 ################################################################################
 resource "aws_instance" "web" {
-  ami                    = data.aws_ami.ubuntu24.id
+  ami                    = data.aws_ami.ubuntu22.id
   instance_type          = var.instance_type
   key_name               = var.instance_key
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id, aws_security_group.ec2_jenkins_port_8080.id]
