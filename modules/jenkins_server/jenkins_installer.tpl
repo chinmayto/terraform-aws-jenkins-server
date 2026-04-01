@@ -22,4 +22,11 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
-echo "Jenkins and AWS CLI installed on this server..."
+# Install Terraform
+TERRAFORM_VERSION="1.11.4"
+curl -fsSL "https://releases.hashicorp.com/terraform/$${TERRAFORM_VERSION}/terraform_$${TERRAFORM_VERSION}_linux_amd64.zip" -o terraform.zip
+unzip terraform.zip
+sudo mv terraform /usr/local/bin/
+rm terraform.zip
+
+echo "Jenkins, AWS CLI, and Terraform installed on this server..."
